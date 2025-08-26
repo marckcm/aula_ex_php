@@ -18,10 +18,11 @@
 
     <?php
 
-    //Código aqui        
 
-    if (isset($_POST['n1'])) {
-        $m = media($_POST['n1'], $_POST['n2'], $_POST['n3']);
+if (isset($_POST['n1'])) {
+        $numeros = [$_POST['n1'], $_POST['n2'], $_POST['n3']];
+        $media = array_sum($numeros) / count($numeros);
+        $m = $media;
         echo "<p>A média é <b>" . number_format($m, 2) . "</b></p>";
     }
     ?>

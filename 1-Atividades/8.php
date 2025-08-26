@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Exercício 8</title>
     <style>
-        body { font-family: Arial; margin: 20px; }
-        input { padding: 5px; margin: 5px; }
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
     </style>
 </head>
+
 <body>
     <h2>Login Simples</h2>
     <form method="post">
@@ -19,12 +28,17 @@
     <?php
     include("8_usuarios.php");
 
-    if (isset($_POST['user'])) {
+    if (isset($_POST['user']) && isset($_POST['pass'])) {
+        $user = $_POST['user'];
+        $pass = $_POST['pass'];
 
-        //Código aqui        
-
+        if ($user == $usuario_correto && $pass == $senha_correta) {
+            echo "<strong>Acesso Permitido!</strong>";
+        } else {
+            echo "<strong>Acesso Negado!</strong>";
+        }
     }
     ?>
 </body>
-</html>
 
+</html>
