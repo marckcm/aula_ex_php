@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Exercício 7</title>
-    <style>
-        body { font-family: Arial; margin: 20px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h2>Calcular a Média de 3 Números</h2>
     <form method="post">
@@ -19,7 +19,7 @@
     <?php
 
 
-if (isset($_POST['n1'])) {
+    if (isset($_POST['n1'])) {
         $numeros = [$_POST['n1'], $_POST['n2'], $_POST['n3']];
         $media = array_sum($numeros) / count($numeros);
         $m = $media;
@@ -27,4 +27,5 @@ if (isset($_POST['n1'])) {
     }
     ?>
 </body>
+
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Exercício 10</title>
-    <style>
-        body { font-family: Arial; margin: 20px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h2>Sorteio de Número (1 a 100)</h2>
     <form method="post">
@@ -16,10 +16,11 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-        //Código aqui        
+        $numeroSorteado = rand(1, 100);
+        echo "<br>O número sorteado é: <strong>" . $numeroSorteado . "</strong>";
 
     }
     ?>
 </body>
-</html>
 
+</html>

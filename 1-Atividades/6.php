@@ -4,16 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercício 6</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 20px;
-        }
-
-        ul {
-            color: green;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
