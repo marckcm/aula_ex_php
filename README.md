@@ -1,3 +1,9 @@
+Tela da atividade:
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bdbd716b-31ff-453b-93bd-56ab2da164f8" />
+
+
+
 # BACK-END_ATIVIDADES
 
 Seguem orientações:
